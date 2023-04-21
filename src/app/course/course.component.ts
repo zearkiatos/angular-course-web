@@ -16,7 +16,8 @@ export class CourseComponent implements OnInit {
 
   getCourses() {
     this.courseService.getCourses().subscribe((courses) => {
-      this.courses = courses;
+      return courses;
+
     });
   }
 
@@ -25,6 +26,6 @@ export class CourseComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getCourseList();
+    this.courses = this.getCourseList();
   }
 }

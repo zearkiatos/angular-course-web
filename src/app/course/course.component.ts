@@ -8,7 +8,7 @@ import { dataCourses } from './mocks/data-courses';
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent implements OnInit {
-  private courses: Array<Course> = [];
+  public courses: Array<Course> = [];
 
   constructor() {
   }

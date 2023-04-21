@@ -8,7 +8,7 @@
     "build": "npm run config && ng build",
     "watch": "npm run config && ng build --watch --configuration development",
     "test": "npm run config && ng test",
-    "deploy": "npm run config && ng build --prod --base-href=/angular-course-web/"
+    "deploy": "npm run config && ng build --base-href=/angular-course-web/"
   },
   "private": true,
   "dependencies": {

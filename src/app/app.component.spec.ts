@@ -34,6 +34,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-course-web app is running!');
+    expect(compiled.querySelector('.display-2')?.textContent).toContain('Student list course');
   });
 });

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from './course';
+import { dataCourses } from './mocks/data-courses';
 
 @Component({
   selector: 'app-course',
@@ -9,9 +10,15 @@ import { Course } from './course';
 export class CourseComponent implements OnInit {
   private courses: Array<Course> = [];
 
-  constructor() { }
+  constructor() {
+  }
+
+  getCourseList():Array<Course> {
+    return dataCourses;
+  }
 
   ngOnInit() {
+    this.courses = this.getCourseList();
   }
 
 }

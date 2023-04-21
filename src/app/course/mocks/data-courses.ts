@@ -1,6 +1,6 @@
 import { Course } from "../course";
 
-export const DataCourses = [
+export const dataCourses = [
   new Course("Software Engineering", "Martin Fowler", 4),
   new Course('Soccer 1', "Freddy Rincón", 2),
   new Course("Algorithm", "Dennis Ritchie", 2),

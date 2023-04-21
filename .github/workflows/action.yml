@@ -28,9 +28,11 @@ jobs:
         touch .env &&
         echo "NODE_ENV=${NODE_ENV}" > .env &&
         echo "NG_CLI_ANALYTICS=${NG_CLI_ANALYTICS}" >> .env &&
+        echo "BASE_URL=${BASE_URL}" >> .env
       env:
         NODE_ENV: ${{ secrets.NODE_ENV }}
         NG_CLI_ANALYTICS: ${{ secrets.NG_CLI_ANALYTICS }}
+        BASE_URL: ${{ secrets.BASE_URL }}
     - name: Build
       run: npm run deploy
     - name: Upload production-ready build files
